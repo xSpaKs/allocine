@@ -6,559 +6,1271 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Allocine</title>
 
+        <meta
+            name="description"
+            content="AlloCiné, le site de référence du cinéma et des séries tv ! Découvrez notre recherche d'horaires de films, le programme tv de vos séries préférées, ..."
+        />
+
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto:wght@500&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
-        <nav class="header">
-            <div>
-                <img class="Burger" src="img/burger.png" alt="Menu Burger" />
-            </div>
-            <div>
-                <img class="Logo" src="img/logo-new-fb.png" alt="ALLOCINÉ" />
-            </div>
-            <div>
+        <header>
+            <img class="Burger" src="img/burger.png" alt="Menu Burger" />
+            <a href="#">
                 <img
-                    class="Loupe"
-                    src="img/loupe.png"
-                    alt="Bouton Rechercher"
+                    class="Logo"
+                    src="img/logo-new-fb.png"
+                    alt="Logo Allociné"
                 />
-            </div>
-            <div>
-                <img class="User" src="" alt="Mon compte" />
-            </div>
-        </nav>
+            </a>
+            <img class="Loupe" src="img/loupe.png" alt="Bouton Rechercher" />
+            <a href="#">
+                <img class="User" src="img/user.jpg" alt="Mon compte" />
+            </a>
+        </header>
 
-        <div class="main">
+        <main>
             <div class="cinema">
                 <div class="titlebar"></div>
-                <div class="gros_titre">
-                    <h2>CINÉMA</h2>
+                <div class="gros-titre">
+                    <a href="#">
+                        <h2>CINÉMA</h2>
+                    </a>
                 </div>
             </div>
-            <div class="sorties_de_la_semaine">
-                <div class="titre_medium">
-                    <h3>SORTIES DE LA SEMAINE</h3>
-                </div>
-                <nav class="slider">
-                    <div>
-                        <img
-                            class="sorties_de_la_semaine_film1"
-                            src="img/affiche2.jpg"
-                            alt="Film 1 de la semaine"
-                        />
-                        <div class="sorties_de_la_semaine_meta1">
-                            <h5>Le seigneur des ann...</h5>
-                            <h6>De Peter Jackson</h6>
-                        </div>
-                    </div>
-                    <div>
-                        <img
-                            class="sorties_de_la_semaine_film2"
-                            src="img/19803697.jpg"
-                            alt="Film 2 de la semaine"
-                        />
-                        <div class="sorties_de_la_semaine_meta2">
-                            <h5>Drive</h5>
-                            <h6>De Nicolas Refn</h6>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="toujours_a_laffiche">
-                <div class="titre_medium">
-                    <h3>TOUJOURS A L'AFFICHE</h3>
-                </div>
-                <nav class="slider">
-                    <div>
-                        <img
-                            class="toujours_a_laffiche_film1"
-                            src="img/affiche2.jpg"
-                            alt="Film 1 à l'affiche"
-                        />
-                        <div class="toujours_a_laffiche_meta1">
-                            <h5>Le seigneur des ann...</h5>
-                            <h6>De Peter Jackson</h6>
-                        </div>
-                    </div>
-                    <div>
-                        <img
-                            class="toujours_a_laffiche_film2"
-                            src="img/19803697.jpg"
-                            alt="Film 2 à l'affiche"
-                        />
-                        <div class="toujours_a_laffiche_meta2">
-                            <h5>Drive</h5>
-                            <h6>De Nicolas Refn</h6>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="prochainement">
-                <div class="titre_medium">
-                    <h3>PROCHAINEMENT</h3>
-                    <h6>Classement des films les plus consultés hier</h6>
-                </div>
-                <nav class="prochainement_films">
-                    <div class="prochainement_film1">
-                        <div class="prochainement_film1_titre_date">
-                            <h5>M3GAN</h5>
-                            <h6>28 décembre 2022</h6>
-                        </div>
-                    </div>
-                    <div class="ligne"></div>
-                    <div class="prochainement_film2">
-                        <div class="prochainement_film2_titre_date">
-                            <h5>Avatar : La voie de l'eau</h5>
-                            <h6>14 décembre 2022</h6>
-                        </div>
-                    </div>
-                    <div class="ligne"></div>
-                    <div class="prochainement_film3">
-                        <div class="prochainement_film3_titre_date">
-                            <h5>Corsage</h5>
-                            <h6>14 décembre 2022</h6>
-                        </div>
-                    </div>
-                    <div class="ligne"></div>
-                    <div class="prochainement_film4">
-                        <div class="prochainement_film4_titre_date">
-                            <h5>Stella est amoureuse</h5>
-                            <h6>14 décembre 2022</h6>
-                        </div>
-                    </div>
-                    <div class="ligne"></div>
-                    <div class="prochainement_film5">
-                        <div class="prochainement_film5_titre_date">
-                            <h5>Nos frangins</h5>
-                            <h6>7 décembre 2022</h6>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-            <div class="actu">
-                <div class="titre_medium">
-                    <h3>DERNIERES NEWS CINEMA</h3>
-                </div>
-                <nav class="dernieres_news_cinema">
-                    <nav class="news_principale">
-                        <div class="news_principale_img">
+            <section class="sorties-cinema">
+                <div class="titre-medium titre-slider">
+                    <a href="#">
+                        <h3>SORTIES DE LA SEMAINE</h3>
+                    </a>
+                    <div class="arrow">
+                        <a href="#">
                             <img
-                                src="img/affiche2.jpg"
-                                alt="Affiche de la news principale"
+                                src="img/left-arrow-icon-27.png"
+                                alt="Bouton flèche gauche"
                             />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="img/right-arrow-icon-27.png"
+                                alt="Bouton flèche droite"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="slider cinema-slider">
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/0478952.jpg"
+                                    alt="Affiche du film Enzo le Croco"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
                         </div>
-                        <div class="news_principale_infos">
-                            <h6>NEWS - CULTURE CINE</h6>
-                            <h5>
-                                Maman, j'ai encore raté l'avion : la scène qui a
-                                mal tourné
-                            </h5>
+                        <a href="#" class="cinema-titre">Enzo le Croco</a>
+                        <p class="cinema-real">De Will Speck, Josh Gor...</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/1731932.jpg"
+                                    alt="Affiche du film Le Torrent"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
                         </div>
-                    </nav>
-                    <div class="news_2">
-                        <div class="news_2_infos">
-                            <h6>NEWS - CULTURE CINE</h6>
-                            <h5>
+                        <a href="#" class="cinema-titre">Le Torrent</a>
+                        <p class="cinema-real">De Anne Le Ny</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/0478952.jpg"
+                                    alt="Affiche du film Enzo le Croco"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre">Enzo le Croco</a>
+                        <p class="cinema-real">De Will Speck, Josh Gor...</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/1731932.jpg"
+                                    alt="Affiche du film Le Torrent"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre">Le Torrent</a>
+                        <p class="cinema-real">De Anne Le Ny</p>
+                    </div>
+                </div>
+            </section>
+            <section class="sorties-cinema">
+                <div class="titre-medium titre-slider">
+                    <a href="#">
+                        <h3>TOUJOURS À L'AFFICHE</h3>
+                    </a>
+                    <div class="arrow">
+                        <a href="#">
+                            <img
+                                src="img/left-arrow-icon-27.png"
+                                alt="Bouton flèche gauche"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="img/right-arrow-icon-27.png"
+                                alt="Bouton flèche droite"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="slider cinema-slider">
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/5232325.jpg"
+                                    alt="Affiche du film Black Panther : Wakanda Forever"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre"
+                            >Black Panther : Waka...</a
+                        >
+                        <p class="cinema-real">De Ryan Coogler</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/1154054.jpg"
+                                    alt="Affiche du film Couleurs de l'incendie"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre"
+                            >Couleurs de l'incendie</a
+                        >
+                        <p class="cinema-real">De Clovis Comillac</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/5232325.jpg"
+                                    alt="Affiche du film Black Panther : Wakanda Forever"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre"
+                            >Black Panther : Waka...</a
+                        >
+                        <p class="cinema-real">De Ryan Coogler</p>
+                    </div>
+                    <div class="slide">
+                        <div class="cinema-affiche">
+                            <a href="#">
+                                <img
+                                    src="img/1154054.jpg"
+                                    alt="Affiche du film Couleurs de l'incendie"
+                                />
+                            </a>
+                            <div class="cinema-affiche-footer">
+                                <a href="#">Séances</a>
+                                <a href="#">Bandes-annonces</a>
+                            </div>
+                        </div>
+                        <a href="#" class="cinema-titre"
+                            >Couleurs de l'incendie</a
+                        >
+                        <p class="cinema-real">De Clovis Comillac</p>
+                    </div>
+                </div>
+            </section>
+            <section class="prochainement">
+                <div class="titre-medium">
+                    <a href="#">
+                        <a href="#">
+                            <h3>PROCHAINEMENT</h3>
+                        </a>
+                    </a>
+                    <p class="prochainement-sous-titre">
+                        Classement des films les plus consultés hier
+                    </p>
+                </div>
+                <div class="prochainement-films">
+                    <div class="prochainement-film">
+                        <div>
+                            <a href="#" class="prochainement-titre">M3GAN</a>
+                            <p class="prochainement-date">28 décembre 2022</p>
+                        </div>
+                        <div class="prochainement-en-salle">
+                            <p>EN SALLE</p>
+                        </div>
+                        <a href="#">
+                            <img
+                                class="play-black"
+                                src="img/playblack.png"
+                                alt="Lancer la bande-annonce du film M3GAN"
+                            />
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="prochainement-film">
+                        <div>
+                            <a href="#" class="prochainement-titre"
+                                >Avatar : La voie de l'eau</a
+                            >
+                            <p class="prochainement-date">14 décembre 2022</p>
+                        </div>
+                        <div class="prochainement-en-salle">
+                            <p>EN SALLE</p>
+                        </div>
+                        <a href="#">
+                            <img
+                                class="play-black"
+                                src="img/playblack.png"
+                                alt="Lancer la bande-annonce du film Avatar : La voie de l'eau"
+                            />
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="prochainement-film">
+                        <div>
+                            <a href="#" class="prochainement-titre">Corsage</a>
+                            <p class="prochainement-date">14 décembre 2022</p>
+                        </div>
+                        <div class="prochainement-en-salle">
+                            <p>EN SALLE</p>
+                        </div>
+                        <a href="#">
+                            <img
+                                class="play-black"
+                                src="img/playblack.png"
+                                alt="Lancer la bande-annonce du film Corsage"
+                            />
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="prochainement-film">
+                        <div>
+                            <a href="#" class="prochainement-titre"
+                                >Stella est amoureuse</a
+                            >
+                            <p class="prochainement-date">14 décembre 2022</p>
+                        </div>
+                        <div class="prochainement-en-salle">
+                            <p>EN SALLE</p>
+                        </div>
+                        <a href="#">
+                            <img
+                                class="play-black"
+                                src="img/playblack.png"
+                                alt="Lancer la bande-annonce du film Stella est amoureuse"
+                            />
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="prochainement-film">
+                        <div>
+                            <a href="#" class="prochainement-titre"
+                                >Nos frangins</a
+                            >
+                            <p class="prochainement-date">7 décembre 2022</p>
+                        </div>
+                        <div class="prochainement-en-salle">
+                            <p>EN SALLE</p>
+                        </div>
+                        <a href="#">
+                            <img
+                                class="play-black"
+                                src="img/playblack.png"
+                                alt="Lancer la bande-annonce du film Nos Frangins"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="actu">
+                <div class="titre-medium">
+                    <a href="#">
+                        <h3>DERNIERES NEWS CINEMA</h3>
+                    </a>
+                </div>
+                <div class="news-articles">
+                    <div class="news news-principale">
+                        <a href="#">
+                            <div class="news-principale-img">
+                                <img
+                                    src="img/7dbd1ca29c9da50ad9ff7862c8b0c429.jpg"
+                                    alt="Image de l'article cinéma principal"
+                                />
+                            </div>
+                            <div class="news-principale-infos">
+                                <p class="news-rubrique">NEWS - CULTURE CINE</p>
+                                <p class="news-contenu">
+                                    Maman, j'ai encore raté l'avion : la scène
+                                    qui a failli mal tourner
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - CULTURE CINE</p>
+                            <p class="news-contenu">
                                 Spider-Man 4 : on sait enfin à quoi aurait
                                 ressemblé ce grand méchant !
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_3">
-                        <div class="news_3_infos">
-                            <h6>NEWS - FILMS A LA TV</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - FILMS A LA TV</p>
+                            <p class="news-contenu">
                                 Ce soir à la télé : ne laissez personne vous
                                 dire quoi penser de ce film d'action à la
                                 réputation éxecrable
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_4">
-                        <div class="news_4_infos">
-                            <h6>NEWS - VU SUR LE WEB</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - VU SUR LE WEB</p>
+                            <p class="news-contenu">
                                 Aussi flippante qu'Annabelle, voici M3GAN la
                                 cyber poupée dansante et cauchemardesque !
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_5">
-                        <div class="news_5_infos">
-                            <h6>NEWS - STARS</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STARS</p>
+                            <p class="news-contenu">
                                 Cet acteur que tout le monde pense fini est
                                 défendu par John Carpenter
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_6">
-                        <div class="news_6_infos">
-                            <h6>NEWS - INSOLITE</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - INSOLITE</p>
+                            <p class="news-contenu">
                                 Marvel : à vous la terrifiante tête de Venom à
                                 construire en LEGO !
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_7">
-                        <div class="news_7_infos">
-                            <h6>NEWS - TOURNAGES</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - TOURNAGES</p>
+                            <p class="news-contenu">
                                 Prime Video s'offre le nouveau film à la James
                                 Bond avec Channing Tatum !
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_8">
-                        <div class="news_8_infos">
-                            <h6>NEWS - VU SUR LE WEB</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - VU SUR LE WEB</p>
+                            <p class="news-contenu">
                                 Super Mario Bros : la princesse Peach prend les
                                 armes dans la nouvelle bande-annonce endiablée
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_9">
-                        <div class="news_9_infos">
-                            <h6>NEWS - STARS</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STARS</p>
+                            <p class="news-contenu">
                                 "Ce ne sont pas des stars" : Tarantino tacle les
                                 acteurs Marvel [MISE A JOUR]
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                </nav>
-            </div>
-            <div class="bandes_annonces_a_ne_pas_manquer">
-                <div class="titre_medium">
-                    <h3>BANDES-ANNONCES A NE PAS MANQUER</h3>
+                    <div class="ligne"></div>
                 </div>
-                <nav class="bandes_annonces_a_ne_pas_manquer_videos">
-                    <div class="bandes_annonces_a_ne_pas_manquer_principale">
+            </section>
+            <section class="bandes-annonces">
+                <div class="titre-medium">
+                    <a href="#">
+                        <h3>BANDES-ANNONCES À NE PAS MANQUER</h3>
+                    </a>
+                </div>
+                <div class="bandes-annonces-principale">
+                    <a href="#" class="bandes-annonces-affiche-and-play">
                         <img
-                            src="img/affiche2.jpg"
-                            alt="Bande-anonce à ne pas manquer"
+                            src="img/0085116.jpg"
+                            alt="Aperçu de la bande-annonce du film Avatar : La voie de l'eau"
                         />
-                    </div>
-                    <div class="bandes_annonces_2">
-                        <img src="img/affiche2.jpg" alt="" />
-                    </div>
-                    <div class="bandes_annonces_3">
-                        <img src="img/affiche2.jpg" alt="" />
-                    </div>
-                    <div class="bandes_annonces_4">
-                        <img src="img/affiche2.jpg" alt="" />
-                    </div>
-                    <div class="bandes_annonces_5">
-                        <img src="img/affiche2.jpg" alt="" />
-                    </div>
-                </nav>
-            </div>
-            <div class="svod_vod">
-                <div class="titlebar"></div>
-                <div class="gros_titre">
-                    <h2>SVOD & VOD</h2>
-                    <h6>
-                        Accédez au contenu du catalogue de votre plateforme
-                        préférée
-                    </h6>
-                    <nav class="slider">
-                        <div class="svod_vod_app1">
-                            <img src="img/affiche2.jpg" alt="" />
+                        <img
+                            class="bandes-annonces-play"
+                            src="img/play.png"
+                            alt="Lancer la bande-annonce du film Avatar : La voie de l'eau"
+                        />
+                    </a>
+                    <div class="bandes-annonces-principale-infos">
+                        <a href="#"
+                            ><img
+                                src="img/4565071.jpg"
+                                alt="Affiche du film Avatar : La voie de l'eau"
+                        /></a>
+                        <div>
+                            <a
+                                href="#"
+                                class="bandes-annonces-principale-titre1"
+                            >
+                                <p>Avatar : La voie de l'eau</p>
+                            </a>
+                            <a
+                                href="#"
+                                class="bandes-annonces-principale-titre2"
+                            >
+                                <p>Avatar : La voie de l'eau Bande-anonce VO</p>
+                            </a>
                         </div>
-                        <div class="svod_vod_app2">
-                            <img src="img/affiche2.jpg" alt="" />
-                        </div>
-                    </nav>
+                    </div>
                 </div>
+                <div class="bandes-annonces-affiches">
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/0189590(1).jpg"
+                                alt="Affiche du film M3GAN"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film M3GAN"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">M3GAN Bande-annonce VO</a>
+                        </div>
+                    </div>
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/3526441.jpg"
+                                alt="Affiche du film Théorème"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film Théorème"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">Théorème Bande-annonce VO</a>
+                        </div>
+                    </div>
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/0888855.jpg"
+                                alt="Affiche du film White Noise"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer le teaser du film White Noise"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">White Noise Teaser VO</a>
+                        </div>
+                    </div>
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/2637256(1).jpg"
+                                alt="Affiche du téléfilm Les Gardiens de la galaxie : Joyeuses Fêtes"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du téléfilm Les Gardiens de la galaxie : Joyeuses Fêtes"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">Les gardiens de la galaxie : Jo...</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="svod-vod">
+                <div class="titlebar titlebar-vod"></div>
+                <h2 class="gros-titre">SVOD & VOD</h2>
             </div>
-            <div class="bandes_annonces_streaming">
-                <div class="bandes_annonces_streaming_titre">
+            <section class="vod-apps">
+                <p class="vod-sous-titre">
+                    Accédez au contenu du catalogue de votre plateforme préférée
+                    :
+                </p>
+                <div class="arrow">
+                    <a href="#">
+                        <img
+                            src="img/left-arrow-icon-27.png"
+                            alt="Bouton flèche gauche"
+                        />
+                    </a>
+                    <a href="#">
+                        <img
+                            src="img/right-arrow-icon-27.png"
+                            alt="Bouton flèche droite"
+                        />
+                    </a>
+                </div>
+                <div class="slider vod-slider">
+                    <a href="#" class="slide">
+                        <div>
+                            <img src="img/disney.jpg" alt="Logo Disney+" />
+                            <p>Disney+</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide">
+                        <div>
+                            <img src="img/netflix.jpg" alt="Logo Netflix" />
+                            <p>Netflix</p>
+                        </div>
+                    </a>
+                    <a href="#" class="slide">
+                        <div>
+                            <img
+                                src="img/amazon.jpg"
+                                alt="Logo Amazon Prime Video"
+                            />
+                            <p>Amazon Prime Video</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="bandes-annonces">
+                <div class="titre-medium">
                     <h3>BANDES-ANNONCES STREAMING</h3>
                 </div>
-                <nav class="bandes_annonces_streaming_videos">
-                    <div class="bandes_annonces_streaming_principale">
+                <div class="bandes-annonces-principale">
+                    <a href="#" class="bandes-annonces-affiche-and-play">
                         <img
-                            src="img/affiche2.jpg"
-                            alt="Bande-anonce streaming"
+                            src="img/4626681.jpg"
+                            alt="Aperçu de la bande-annonce du téléfilm Les Gardiens de la galaxie : Joyeuses Fêyes"
                         />
+                        <img
+                            class="bandes-annonces-play"
+                            src="img/play.png"
+                            alt="Lancer la bande-annonce du téléfilm Les Gardiens de la galaxie : Joyeuses Fêtes"
+                        />
+                    </a>
+                    <div class="bandes-annonces-principale-infos">
+                        <img
+                            src="img/2637256(1).jpg"
+                            alt="Affiche du téléfilm Les Gardiens de la galaxie : Joyeuses Fêtes"
+                        />
+                        <div>
+                            <a
+                                href="#"
+                                class="bandes-annonces-principale-titre1"
+                            >
+                                <p>
+                                    Les Gardiens de la galaxie : Joyeuses fêtes
+                                </p>
+                            </a>
+                            <a
+                                href="#"
+                                class="bandes-annonces-principale-titre2"
+                            >
+                                <p>
+                                    Les Gardiens de la galaxie : Joyeuses fêtes
+                                    Bande-anonce VO
+                                </p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="bandes_annonces_streaming_2">
-                        <img src="img/affiche2.jpg" alt="" />
+                </div>
+                <div class="bandes-annonces-affiches">
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/080592.jpg"
+                                alt="Affiche du film Le Retour de la Momie"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film Le Retour de la Momie"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">Le Retour de la Momie Bande-...</a>
+                        </div>
                     </div>
-                    <div class="bandes_annonces_streaming_3">
-                        <img src="img/affiche2.jpg" alt="" />
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/0454793.jpg"
+                                alt="Affiche du film The Wonder"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film The Wonder"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">The Wonder Bande-annonce VO</a>
+                        </div>
                     </div>
-                    <div class="bandes_annonces_streaming_4">
-                        <img src="img/affiche2.jpg" alt="" />
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/affiche2.jpg"
+                                alt="Affiche du film Le Seigneur des anneaux : les 2 Tours"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film Le Seigneur des anneaux : les 2 Tours"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">Le Seigneur des anneaux : les ...</a>
+                        </div>
                     </div>
-                    <div class="bandes_annonces_streaming_5">
-                        <img src="img/affiche2.jpg" alt="" />
+                    <div class="bandes-annonces-affiche">
+                        <a href="#" class="bandes-annonces-affiche-and-play">
+                            <img
+                                src="img/19803697.jpg"
+                                alt="Affiche du film Drive"
+                            />
+                            <img
+                                class="bandes-annonces-play"
+                                src="img/play.png"
+                                alt="Lancer la bande-annonce du film Drive"
+                            />
+                        </a>
+                        <div class="bandes-annonces-affiche-footer">
+                            <a href="#">Drive Bande-annonce VO</a>
+                        </div>
                     </div>
-                </nav>
-            </div>
-            <div class="actu">
-                <div class="titre_medium">
+                </div>
+            </section>
+            <section class="actu">
+                <div class="titre-medium">
                     <h3>L'ACTU STREAMING</h3>
                 </div>
-                <nav class="actu_streaming_films">
-                    <nav class="news_principale">
-                        <div class="actu_streaming_principale_img">
-                            <img
-                                src="img/affiche2.jpg"
-                                alt="Affiche de l'actu streaming principale"
-                            />
-                        </div>
-                        <div class="actu_streaming_principale_infos">
-                            <h6>NEWS - STREAMING</h6>
-                            <h5>
-                                Willow sur Disney+ : pourquoi cet acteur
-                                emblématique du film n'apparaît pas dans la
-                                série ?
-                            </h5>
-                        </div>
-                    </nav>
-                    <div class="news_2">
-                        <div class="news_2_infos">
-                            <h6>NEWS - STREAMING</h6>
-                            <h5>
+                <div class="news-articles">
+                    <div class="news news-principale">
+                        <a href="#">
+                            <div class="news-principale-img">
+                                <img
+                                    src="img/22c59f197696067b8908b2e967967fe1.jpg"
+                                    alt="Image de l'article streaming principal"
+                                />
+                            </div>
+                            <div class="news-principale-infos">
+                                <p class="news-rubrique">NEWS - STREAMING</p>
+                                <p class="news-contenu">
+                                    Willow sur Disney+ : pourquoi cet acteur
+                                    emblématique du film n'apparaît pas dans la
+                                    série ?
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STREAMING</p>
+                            <p class="news-contenu">
                                 Mercredi sur Netflix : la série de Tim Burton
                                 pulvérise le record de Stranger Things
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_3">
-                        <div class="news_3_infos">
-                            <h6>NEWS - FILMS A LA TV</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - FILMS A LA TV</p>
+                            <p class="news-contenu">
                                 Netflix : ce film français cartonne et il va
                                 vous retourner le cerveau
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_4">
-                        <div class="news_4_infos">
-                            <h6>NEWS - STREAMING</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STREAMING</p>
+                            <p class="news-contenu">
                                 Netflix : quels sont les films à voir en
                                 décembre 2022 ?
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                </nav>
-            </div>
-            <div class="streaming">
-                <div class="titre_medium">
+                    <div class="ligne"></div>
+                </div>
+            </section>
+            <section class="streaming">
+                <div class="titre-medium titre-slider">
                     <h3>STREAMING</h3>
-                </div>
-                <nav class="slider">
-                    <div class="streaming_series">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <h6>
-                            Marie-Antoinette, American Horror Story, The
-                            Staircase, Désordres, Trigger Point
-                        </h6>
-                    </div>
-                    <div class="streaming_film">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <h6>
-                            Marie-Antoinette, American Horror Story, The
-                            Staircase, Désordres, Trigger Point
-                        </h6>
-                    </div>
-                </nav>
-            </div>
-            <div class="vod_dvd_blu-ray">
-                <div class="titre_medium">
-                    <h3>VOD & DVD/BLU-RAY</h3>
-                </div>
-                <nav class="slider">
-                    <div class="vod_dvd_blu-ray_films">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <h6>
-                            Barbare, Dodo, Krypto et les Super-Animaux, Joyride,
-                            Des Feux dans la nuit
-                        </h6>
-                    </div>
-                    <div class="vod_dvd_blu-ray_series">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <h6>
-                            Barbare, Dodo, Krypto et les Super-Animaux, Joyride,
-                            Des Feux dans la nuit
-                        </h6>
-                    </div>
-                </nav>
-            </div>
-            <div class="series">
-                <div class="titlebar"></div>
-                <div class="gros_titre">
-                    <h2>SERIES</h2>
-                </div>
-            </div>
-            <div class="top_series_de_la_semaine">
-                <div class="titre_medium">
-                    <h3>TOP SERIES DE LA SEMAINE</h3>
-                </div>
-                <nav class="series_affiches">
-                    <div class="series_affiche_1">
-                        <img src="img/affiche2.jpg" alt="Mercredi" />
-                        <h5>Mercredi</h5>
-                        <h6>Comédie, Fantastique, Policier</h6>
-                    </div>
-                    <div class="series_affiche_2">
-                        <img src="img/affiche2.jpg" alt="1899" />
-                        <h5>1899</h5>
-                        <h6>Drame, Epouvante-horreur, Thriller</h6>
-                    </div>
-                    <div class="series_affiche_3">
-                        <img src="img/affiche2.jpg" alt="L'Homme de nos vies" />
-                        <h5>L'Homme de nos vies</h5>
-                        <h6>Drame, Thriller</h6>
-                    </div>
-                    <div class="series_affiche_4">
-                        <img src="img/affiche2.jpg" alt="Elite" />
-                        <h5>Elite</h5>
-                        <h6>Drame, Policier, Thriller</h6>
-                    </div>
-                </nav>
-            </div>
-            <div class="les_series_les_plus_attendues">
-                <div class="titre_medium">
-                    <h3>LES SERIES LES PLUS ATTENDUES</h3>
-                </div>
-                <nav class="les_series_les_plus_attendues_affiches">
-                    <div class="les_series_les_plus_attendues_affiche_1">
-                        <img
-                            src="img/affiche2.jpg"
-                            alt="National Treasure: Edge Of History"
-                        />
-                        <h5>National Treasure: Edge Of ...</h5>
-                        <h6>Aventure</h6>
-                    </div>
-                    <div class="les_series_les_plus_attendues_affiche_2">
-                        <img src="img/affiche2.jpg" alt="Tulsa King" />
-                        <h5>Tulsa King</h5>
-                        <h6>Drame, Thriller</h6>
-                    </div>
-                    <div class="les_series_les_plus_attendues_affiche_3">
-                        <img src="img/affiche2.jpg" alt="The Last Of Us" />
-                        <h5>The Last Of Us</h5>
-                        <h6>Aventure, Epouvante-horreur, Act...</h6>
-                    </div>
-                    <div class="les_series_les_plus_attendues_affiche_4">
-                        <img src="img/affiche2.jpg" alt="Septième Ciel" />
-                        <h5>Septième Ciel</h5>
-                        <h6>Comédie dramatique</h6>
-                    </div>
-                </nav>
-            </div>
-            <div class="actu">
-                <div class="titre_medium">
-                    <h3>L'ACTU SERIES</h3>
-                </div>
-                <nav class="actu_series">
-                    <nav class="news_principale">
-                        <div class="actu_series_principale_img">
+                    <div class="arrow">
+                        <a href="#">
                             <img
-                                src="img/affiche2.jpg"
-                                alt="Affiche de l'actu séries principale"
+                                src="img/left-arrow-icon-27.png"
+                                alt="Bouton flèche gauche"
                             />
-                        </div>
-                        <div class="actu_series_principale_infos">
-                            <h6>NEWS - SERIES A LA TV</h6>
-                            <h5>
-                                Après son départ de Sam, Natacha Lindinger
-                                débarque sur France 2 dans une téléfilm
-                                coup-de-poing
-                            </h5>
-                        </div>
-                    </nav>
-                    <div class="news_2">
-                        <div class="news_2_infos">
-                            <h6>NEWS - STARS</h6>
-                            <h5>
+                        </a>
+                        <a href="#">
+                            <img
+                                src="img/right-arrow-icon-27.png"
+                                alt="Bouton
+                            flèche droite"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="slider streaming-slider">
+                    <div class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/1207910.jpg"
+                                alt="Affiche de la série Marie-Antoinette"
+                            />
+                            <img
+                                src="img/0328175.jpg"
+                                alt="Affiche de la série American Horror Story"
+                            />
+                            <img
+                                src="img/2994318.jpg"
+                                alt="Affiche de la série The Staircase"
+                            />
+                            <img
+                                src="img/2339817.jpg"
+                                alt="Affiche de la série Désordres"
+                            />
+                            <div class="series-a-voir">
+                                <p>SERIES A VOIR</p>
+                                <p>SUR CANAL+</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#"> Marie-Antoinette</a>,
+                            <a href="#"> American Horror Story</a>,<a href="#">
+                                The Staircase</a
+                            >,<a href="#"> Désordres</a>,<a href="#">
+                                Trigger Point</a
+                            >
+                        </p>
+                    </div>
+                    <div href="#" class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/1207910.jpg"
+                                alt="Affiche de la série Marie-Antoinette"
+                            />
+                            <img
+                                src="img/0328175.jpg"
+                                alt="Affiche de la série American Horror Story"
+                            />
+                            <img
+                                src="img/2994318.jpg"
+                                alt="Affiche de la série The Staircase"
+                            />
+                            <img
+                                src="img/2339817.jpg"
+                                alt="Affiche de la série Désordres"
+                            />
+                            <div class="series-a-voir">
+                                <p>SERIES A VOIR</p>
+                                <p>SUR CANAL+</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#"> Marie-Antoinette</a>,
+                            <a href="#"> American Horror Story</a>,<a href="#">
+                                The Staircase</a
+                            >,<a href="#"> Désordres</a>,<a href="#">
+                                Trigger Point</a
+                            >
+                        </p>
+                    </div>
+                    <div href="#" class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/1207910.jpg"
+                                alt="Affiche de la série Marie-Antoinette"
+                            />
+                            <img
+                                src="img/0328175.jpg"
+                                alt="Affiche de la série American Horror Story"
+                            />
+                            <img
+                                src="img/2994318.jpg"
+                                alt="Affiche de la série The Staircase"
+                            />
+                            <img
+                                src="img/2339817.jpg"
+                                alt="Affiche de la série Désordres"
+                            />
+                            <div class="series-a-voir">
+                                <p>SERIES A VOIR</p>
+                                <p>SUR CANAL+</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#"> Marie-Antoinette</a>,
+                            <a href="#"> American Horror Story</a>,<a href="#">
+                                The Staircase</a
+                            >,<a href="#"> Désordres</a>,<a href="#">
+                                Trigger Point</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="vod-dvd-blu-ray">
+                <div class="titre-medium titre-slider">
+                    <h3>VOD & DVD/BLU-RAY</h3>
+                    <div class="arrow">
+                        <a href="#">
+                            <img
+                                src="img/left-arrow-icon-27.png"
+                                alt="Bouton flèche gauche"
+                            />
+                        </a>
+                        <a href="#">
+                            <img
+                                src="img/right-arrow-icon-27.png"
+                                alt="Bouton flèche droite"
+                            />
+                        </a>
+                    </div>
+                </div>
+                <div class="slider streaming-slider">
+                    <div class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/4568186.jpg"
+                                alt="Affiche de la série Barbare"
+                            />
+                            <img
+                                src="img/4928164.jpg"
+                                alt="Affiche de la série Dodo"
+                            />
+                            <img
+                                src="img/1441427.jpg"
+                                alt="Affiche de la série Krypto et les Super-Animaux"
+                            />
+                            <img
+                                src="img/0587396.jpg"
+                                alt="Affiche de la série Joyride"
+                            />
+                            <div class="series-a-voir">
+                                <p>LES DERNIERS FILMS</p>
+                                <p>EN VOD</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#">Barbare</a>, <a href="#">Dodo</a>,
+                            <a href="#">Krypto et les Super-Animaux</a>,
+                            <a href="#">Joyride</a>,
+                            <a href="#">Des Feux dans la nuit</a>
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/4568186.jpg"
+                                alt="Affiche de la série Barbare"
+                            />
+                            <img
+                                src="img/4928164.jpg"
+                                alt="Affiche de la série Dodo"
+                            />
+                            <img
+                                src="img/1441427.jpg"
+                                alt="Affiche de la série Krypto et les Super-Animaux"
+                            />
+                            <img
+                                src="img/0587396.jpg"
+                                alt="Affiche de la série Joyride"
+                            />
+                            <div class="series-a-voir">
+                                <p>LES DERNIERS FILMS</p>
+                                <p>EN VOD</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#">Barbare</a>, <a href="#">Dodo</a>,
+                            <a href="#">Krypto et les Super-Animaux</a>,
+                            <a href="#">Joyride</a>,
+                            <a href="#">Des Feux dans la nuit</a>
+                        </p>
+                    </div>
+                    <div class="slide">
+                        <a href="#" class="streaming-series">
+                            <img
+                                src="img/4568186.jpg"
+                                alt="Affiche de la série Barbare"
+                            />
+                            <img
+                                src="img/4928164.jpg"
+                                alt="Affiche de la série Dodo"
+                            />
+                            <img
+                                src="img/1441427.jpg"
+                                alt="Affiche de la série Krypto et les Super-Animaux"
+                            />
+                            <img
+                                src="img/0587396.jpg"
+                                alt="Affiche de la série Joyride"
+                            />
+                            <div class="series-a-voir">
+                                <p>LES DERNIERS FILMS</p>
+                                <p>EN VOD</p>
+                            </div>
+                        </a>
+                        <p class="streaming-titre">
+                            <a href="#">Barbare</a>, <a href="#">Dodo</a>,
+                            <a href="#">Krypto et les Super-Animaux</a>,
+                            <a href="#">Joyride</a>,
+                            <a href="#">Des Feux dans la nuit</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="serie">
+                <div class="titlebar"></div>
+                <div class="gros-titre">
+                    <a href="#">
+                        <h2>SÉRIES</h2>
+                    </a>
+                </div>
+            </section>
+            <section class="series">
+                <div class="titre-medium">
+                    <a href="#">
+                        <h3>TOP SÉRIES DE LA SEMAINE</h3>
+                    </a>
+                </div>
+                <div class="series-affiches">
+                    <div class="series-affiche-1">
+                        <a href="#" class="series-affiche">
+                            <div class="series-numero"><p>1</p></div>
+                            <img
+                                src="img/2942764.jpg"
+                                alt="Affiche de la série Mercredi"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">Mercredi</a>
+                        <p class="series-genre">
+                            Comédie, Fantastique, Policier
+                        </p>
+                    </div>
+                    <div class="series-affiche-2">
+                        <a href="#" class="series-affiche">
+                            <div class="series-numero"><p>2</p></div>
+                            <img
+                                src="img/2260712.jpg"
+                                alt="Affiche de la série 1899"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">1899</a>
+                        <p class="series-genre">
+                            Drame, Epouvante-horreur, Thriller
+                        </p>
+                    </div>
+                    <div class="series-affiche-3">
+                        <a href="#" class="series-affiche">
+                            <div class="series-numero"><p>3</p></div>
+                            <img
+                                src="img/5554731.jpg"
+                                alt="Affiche de la série L'Homme de nos vies"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">L'Homme de nos vies</a>
+                        <p class="series-genre">Drame, Thriller</p>
+                    </div>
+                    <div class="series-affiche-4">
+                        <a href="#" class="series-affiche">
+                            <div class="series-numero"><p>4</p></div>
+                            <img
+                                src="img/1035233.jpg"
+                                alt="Affiche de la série Elite"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">Elite</a>
+                        <p class="series-genre">Drame, Policier, Thriller</p>
+                    </div>
+                </div>
+            </section>
+            <section class="series">
+                <div class="titre-medium">
+                    <a href="#">
+                        <h3>LES SÉRIES LES PLUS ATTENDUES</h3>
+                    </a>
+                </div>
+                <div class="series-affiches">
+                    <div class="series-affiche-1">
+                        <a href="#" class="series-affiche">
+                            <img
+                                src="img/2456091.jpg"
+                                alt="Affiche de la série National Treasure : Edge of "
+                            />
+                        </a>
+                        <a href="#" class="series-titre">
+                            National Treasure : Edge of...
+                        </a>
+                        <p class="series-genre">Aventure</p>
+                    </div>
+                    <div class="series-affiche-2">
+                        <a href="#" class="series-affiche">
+                            <img
+                                src="img/5509057.jpg"
+                                alt="Affiche de la série Tulsa King"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">Tulsa King</a>
+                        <p class="series-genre">Drame, Thriller</p>
+                    </div>
+                    <div class="series-affiche-3">
+                        <a href="#" class="series-affiche">
+                            <img
+                                src="img/4090400.jpg"
+                                alt="Affiche de la série The last of Us"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">The Last of Us</a>
+                        <p class="series-genre">
+                            Aventure, Epouvante-horreur, Act...
+                        </p>
+                    </div>
+                    <div class="series-affiche-4">
+                        <a href="#" class="series-affiche">
+                            <img
+                                src="img/0037824.jpg"
+                                alt="Affiche de la série Septième ciel"
+                            />
+                        </a>
+                        <a href="#" class="series-titre">Septième ciel</a>
+                        <p class="series-genre">Comédie dramatique</p>
+                    </div>
+                </div>
+            </section>
+            <section class="actu actu-series">
+                <div class="titre-medium">
+                    <a href="#">
+                        <h3>L'ACTU SÉRIES</h3>
+                    </a>
+                </div>
+                <div class="news-articles">
+                    <div class="news news-principale">
+                        <a href="#">
+                            <div class="news-principale-img">
+                                <img
+                                    src="img/5707170aa875d1062c5757071258b83c.jpg"
+                                    alt="Affiche de l'article série principal"
+                                />
+                            </div>
+                            <div class="news-principale-infos">
+                                <p class="news-rubrique">
+                                    NEWS - SERIES A LA TV
+                                </p>
+                                <p class="news-contenu">
+                                    Après son départ de Sam, Natacha Lindinger
+                                    débarque sur France 2 dans une téléfilm
+                                    coup-de-poing
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STARS</p>
+                            <p class="news-contenu">
                                 Mort de Clarence Gilyard : Chuck Norris rend un
                                 émouvant hommage à Trivette
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_3">
-                        <div class="news_3_infos">
-                            <h6>NEWS - STREAMING</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - STREAMING</p>
+                            <p class="news-contenu">
                                 Willow sur Disney+ : pourquoi cet acteur
                                 emblématique du film n'apparaît pas dans la
                                 série ?
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_4">
-                        <div class="news_4_infos">
-                            <h6>NEWS - SERIES A LA TV</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - SERIES A LA TV</p>
+                            <p class="news-contenu">
                                 Un Si Grand Soleil : une réconciliation est-elle
                                 possible entre Ludo et Christophe ?
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                    <div class="news_5">
-                        <div class="news_5_infos">
-                            <h6>NEWS - SERIES A LA TV</h6>
-                            <h5>
+                    <div class="ligne"></div>
+                    <div class="news">
+                        <a href="#">
+                            <p class="news-rubrique">NEWS - SERIES A LA TV</p>
+                            <p class="news-contenu">
                                 Ici tout commence : Eliott va-t-il empêcher Jude
                                 de se suicider ?
-                            </h5>
-                        </div>
+                            </p>
+                        </a>
                     </div>
-                </nav>
+                    <div class="ligne"></div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="suivez-nous">
+                <p class="footer-title">SUIVEZ-NOUS</p>
+                <div class="footer-apps">
+                    <a class="facebook" href="#"
+                        ><img src="img/facebook.png" alt="Logo Facebook"
+                    /></a>
+                    <a class="twitter" href="#"
+                        ><img src="img/twitter.png" alt="Logo Twitter"
+                    /></a>
+                    <a class="instagram" href="#"
+                        ><img src="img/instagram.png" alt="Logo Instagram"
+                    /></a>
+                    <a class="tiktok" href="#"
+                        ><img src="img/tiktok.png" alt="Logo Tiktok"
+                    /></a>
+                    <a class="mail" href="#"
+                        ><img src="img/mail.png" alt="Logo Mail"
+                    /></a>
+                </div>
             </div>
-            <div class="footer">
-                <div class="suivez_nous">
-                    <h6 class="footer_title">SUIVEZ-NOUS</h6>
-                    <nav class="footer_apps">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <img src="img/affiche2.jpg" alt="" />
-                        <img src="img/affiche2.jpg" alt="" />
-                        <img src="img/affiche2.jpg" alt="" />
-                        <img src="img/affiche2.jpg" alt="" />
-                    </nav>
+            <div class="ligne"></div>
+            <div class="allocine-sur-mobile">
+                <p class="footer-title">ALLOCINÉ SUR MOBILE</p>
+                <div class="footer-mobile-apps">
+                    <a class="apple" href="#"
+                        ><img src="img/apple.png" alt="Logo Apple"
+                    /></a>
+                    <a class="android" href="#"
+                        ><img src="img/android.png" alt="Logo Android"
+                    /></a>
                 </div>
-                <div class="allocine_sur_mobile">
-                    <h6 class="footer_title">ALLOCINE SUR MOBILE</h6>
-                    <nav class="footer_mobile_apps">
-                        <img src="img/affiche2.jpg" alt="" />
-                        <img src="img/affiche2.jpg" alt="" />
-                    </nav>
-                </div>
-                <div class="allocine_etranger">
-                    <h6 class="footer_title">ALLOCINE A L'ETRANGER</h6>
-                    <nav>
-                        <div>
-                            <h6>Filmstarts</h6>
-                            <p>Allemagne</p>
-                        </div>
-                        <div>
-                            <h6>Sensacine</h6>
-                            <p>Espagne</p>
-                        </div>
-                        <div>
-                            <h6>Beyazperde</h6>
-                            <p>Turquie</p>
-                        </div>
-                        <div>
-                            <h6>AdoroCinema</h6>
-                            <p>Brésil</p>
-                        </div>
-                        <div>
-                            <h6>Sensaciné México</h6>
-                            <p>Mexique</p>
-                        </div>
-                    </nav>
-                </div>
-                <div class="footer_info"></div>
             </div>
-        </div>
+            <div class="ligne"></div>
+            <div class="allocine-etranger">
+                <p class="footer-title">ALLOCINÉ À L'ÉTRANGER</p>
+                <div class="allocine-etranger-pays">
+                    <div>
+                        <a href="#">Filmstarts</a>
+                        <p>Allemagne</p>
+                    </div>
+                    <div>
+                        <a href="#">Sensacine</a>
+                        <p>Espagne</p>
+                    </div>
+                    <div>
+                        <a href="#">Beyazperde</a>
+                        <p>Turquie</p>
+                    </div>
+                    <div>
+                        <a href="#">AdoroCinema</a>
+                        <p>Brésil</p>
+                    </div>
+                    <div>
+                        <a href="#">Sensaciné México</a>
+                        <p>Mexique</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ligne"></div>
+            <div class="footer-info">
+                <div class="footer-info-boutons">
+                    <a href="#">Contact</a>
+                    <p>|</p>
+                    <a href="#">Qui sommes-nous</a>
+                    <p>|</p>
+                    <a href="#">Recrutement</a>
+                    <p>|</p>
+                    <a href="#">Publicité</a>
+                    <p>|</p>
+                    <a href="#">CGU</a>
+                    <p>|</p>
+                    <a href="#">Politique de cookies</a>
+                    <p>|</p>
+                    <a href="#">Préferences cookies</a>
+                    <p>|</p>
+                    <a href="#">Données personnelles</a>
+                    <p>|</p>
+                    <a href="#">Revue de presse</a>
+                    <p>|</p>
+                    <a href="#">Les services AlloCiné</a>
+                    <p>|</p>
+                    <p>©AlloCiné</p>
+                </div>
+                <div>
+                    <p class="footer-info-paragraphe">
+                        Retrouvez tous les horaires et infos de votre cinéma sur
+                        le numéro AlloCiné :
+                        <span class="footer-numero">0 892 892 892</span>
+                        (0,90€/minute)
+                    </p>
+                </div>
+                <div class="footer-logo">
+                    <img src="img/logo-new-fbW.png" alt="Logo Allociné" />
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
