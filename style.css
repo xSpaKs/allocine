@@ -1,16 +1,44 @@
-header {
+nav {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: #fecc00;
     width: 100%;
-    height: 50px;
-    display: grid;
-    grid-template-columns: 1fr 5.7fr 1.3fr 1fr;
+    background-color: #fecc00;
+    display: flex;
+    padding: 7px;
+    z-index: 20;
     align-items: center;
-    justify-content: space-between;
-    z-index: 1;
+}
+
+.open .header_links {
+    transform: none;
+}
+
+.header_links {
+    top: 50px;
+    left: 0;
+    bottom: 0;
+
+    z-index: 11;
+    position: fixed;
+    width: 300px;
+    background-color: #2b2b2b;
+
+    display: grid;
+    align-content: start;
+    height: 100%;
+    padding: 10px;
+
+    transform: translate(-100%);
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.header_links a {
+    display: block;
+    color: white;
+    padding: 10px 0px;
+}
+
+.header_links a:hover {
+    color: #4d76c9;
 }
 
 .Burger {
@@ -22,26 +50,38 @@ header {
     width: 120px;
 }
 
-.Loupe {
+.rectangle_loupe {
+    margin-left: auto;
+    margin-right: 10px;
+    justify-self: center;
+    align-content: center;
+}
+
+.rectangle_loupe img {
     width: 24px;
     transform: scaleX(-1);
-    justify-self: center;
+}
+
+.rectangle_loupe p {
+    display: none;
 }
 
 .User {
     width: 40px;
     border-radius: 7%;
     justify-self: center;
+    margin-left: auto;
 }
 
 main {
     position: relative;
     top: 80px;
     padding: 0px 10px;
+    padding-bottom: 30px;
 }
 
-main > section {
-    padding-bottom: 30px;
+main section {
+    margin-bottom: 30px;
 }
 
 main > div {
@@ -112,7 +152,12 @@ h3:hover {
 }
 
 /*overflow pour avoir un slider qui déborde*/
+.container_slider {
+    width: 70%;
+}
+
 .slider {
+    width: 100%;
     overflow: scroll;
     display: grid;
     scroll-snap-type: x mandatory;
@@ -134,8 +179,8 @@ h3:hover {
 
 .arrow {
     display: flex;
-    position: absolute;
-    right: 10px;
+    margin-left: auto;
+    justify-content: end;
 }
 
 .arrow img {
@@ -144,7 +189,7 @@ h3:hover {
 }
 
 .cinema-slider {
-    grid-template-columns: repeat(4, 147px);
+    grid-template-columns: repeat(8, 147px);
     column-gap: 20px;
 }
 
@@ -203,8 +248,9 @@ h3:hover {
 
 .prochainement-film {
     display: grid;
-    grid-template-columns: 5fr 2fr 1fr;
+    grid-template-columns: 5fr 2fr 24px;
     align-items: center;
+    text-overflow: "...";
 }
 
 .prochainement-titre {
@@ -227,6 +273,7 @@ h3:hover {
     height: 15.2px;
     border-radius: 10px;
     white-space: nowrap;
+    margin-right: 8px;
 }
 
 .prochainement-film > a {
@@ -250,6 +297,10 @@ h3:hover {
 .play-black:hover {
     filter: invert(76%) sepia(97%) saturate(2576%) hue-rotate(360deg)
         brightness(100%) contrast(98%);
+}
+
+.bandes-annonces {
+    padding-bottom: 20px;
 }
 
 .bandes-annonces-affiches {
@@ -340,6 +391,9 @@ h3:hover {
     text-align: center;
     font-size: 12px;
     color: #ffffff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 .bandes-annonces-affiche-footer:hover a {
@@ -349,6 +403,7 @@ h3:hover {
 .streaming-slider {
     grid-template-columns: repeat(3, 314.08px);
     column-gap: 20px;
+    justify-content: center;
 }
 
 .streaming-series {
@@ -408,7 +463,7 @@ p {
 
 .vod-slider {
     padding-top: 36px;
-    grid-template-columns: repeat(3, 145px);
+    grid-template-columns: repeat(8, 145px);
     column-gap: 20px;
 }
 
@@ -447,6 +502,10 @@ p {
     padding: 5px 0px;
 }
 
+.news > a > img {
+    display: none;
+}
+
 .news:hover .news-contenu {
     color: #4d76c9;
 }
@@ -457,6 +516,10 @@ p {
 
 .news-principale-img {
     width: 50%;
+}
+
+.news_responsive img {
+    display: none;
 }
 
 .news-principale-infos {
@@ -698,4 +761,235 @@ p {
 .footer-logo img {
     width: 120px;
     margin: 0px 5px;
+}
+
+@media (min-width: 480px) {
+    .bandes-annonces-affiches {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .series-affiches {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .news a {
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    .news > a > img {
+        width: 50%;
+        display: block;
+    }
+
+    .news-principale-img img {
+        width: 100%;
+    }
+
+    .news_infos {
+        padding-left: 10px;
+        padding-right: 5px;
+        width: 50%;
+    }
+
+    .news .news-rubrique {
+        padding: 10px 0px;
+    }
+
+    .actu .ligne {
+        display: none;
+    }
+}
+
+@media (min-width: 720px) {
+    .news-articles {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .news-principale a {
+        padding-bottom: 20px;
+        display: block;
+    }
+
+    .news-principale-img {
+        width: 100%;
+    }
+
+    .news-principale-infos {
+        width: 100%;
+    }
+
+    .news-principale-infos .news-rubrique {
+        padding: 10px 0px;
+    }
+
+    .news-principale {
+        padding: 5px 0px;
+    }
+    .news a {
+        width: 100%;
+        display: block;
+    }
+
+    .news img {
+        width: 100%;
+    }
+
+    .news > a > img {
+        width: 100%;
+        display: block;
+    }
+
+    .news_infos {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer_responsive {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .footer_responsive .ligne {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        max-width: 1024px;
+        padding: 0px 20px;
+        margin: auto;
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+
+    nav {
+        padding: 10px;
+        height: 105px;
+        align-items: baseline;
+        margin: auto;
+        position: relative;
+    }
+
+    .Burger {
+        display: none;
+    }
+
+    .rectangle_loupe {
+        width: 362px;
+        height: 33.6px;
+        background-color: #ffffff;
+        margin-left: 70px;
+        margin-right: auto;
+    }
+
+    .rectangle_loupe p {
+        display: inline;
+        transform: scaleX(-1);
+        font-size: 12px;
+        color: #2b2b2b;
+        padding: 10px 14px;
+    }
+
+    .rectangle_loupe img {
+        margin: 10px;
+        background-color: #ffffff;
+        width: 12px;
+    }
+
+    .header_links {
+        left: 0;
+        top: 70px;
+
+        display: flex;
+        transform: none;
+
+        background-color: #fecc00;
+        width: 100%;
+        height: 34.4px;
+
+        padding: 0;
+
+        position: fixed;
+    }
+
+    .header_links a {
+        color: #2b2b2b;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prochainement {
+        width: 100%;
+    }
+
+    .sorties_cinema_prochainement {
+        display: grid;
+        grid-template-columns: 70% 30%;
+    }
+
+    .sorties_cinema_prochainement > div {
+        display: block;
+        padding-right: 20px;
+    }
+
+    .bandes-annonces {
+        max-width: 654px;
+    }
+
+    .bandes-annonces-actu-streaming {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 30px;
+    }
+
+    .bandes-annonces-actu-series {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 30px;
+    }
+
+    .bandes-annonces-principale-infos {
+        top: -100%;
+    }
+
+    .news-principale {
+        padding: 0;
+    }
+
+    .news-principale a {
+        display: block;
+    }
+
+    .news-articles-responsive {
+        display: block;
+        width: 300px;
+    }
+
+    .news-articles-responsive .ligne {
+        display: block;
+    }
+
+    .news-principale-infos {
+        width: 300px;
+        padding: 10px 0px;
+    }
+
+    .news-principale-img {
+        width: 100%;
+    }
+
+    .news-articles-responsive .news > a > img {
+        display: none;
+    }
+
+    .news {
+        padding: 0;
+    }
+
+    .news a {
+        padding: 0;
+    }
 }
