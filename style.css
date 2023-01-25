@@ -916,13 +916,13 @@ p {
     }
 
     .opacity {
+        left: 0;
+        padding-bottom: 10px;
+        width: 100%;
         background-color: #fecc00;
     }
 
     .header_links {
-        left: 0;
-        top: 70px;
-
         position: sticky;
 
         display: flex;
@@ -933,7 +933,11 @@ p {
         height: 34.4px;
         column-gap: 20px;
 
-        padding: 0;
+        padding-top: 20px;
+        margin: auto;
+        align-items: center;
+
+        transition: 3s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
     .header_links a {

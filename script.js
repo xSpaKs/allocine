@@ -33,3 +33,26 @@ nextButton2.addEventListener("click", () => {
     const slideWidth = slide.clientWidth;
     slidesContainer2.scrollLeft += slideWidth;
 });
+
+const opacity = document.querySelector(".opacity");
+const target = document.querySelector(".Logo");
+opacity.style.top = "0";
+
+const observer = new IntersectionObserver(
+    (entries) => {
+        console.log(
+            "script.js > entries[0].isIntersecting >",
+            entries[0].isIntersecting
+        );
+
+        if (entries[0].isIntersecting) {
+            opacity.style.position = "static";
+        } else opacity.style.position = "fixed";
+    },
+    {
+        rootMargin: "25px 0px 0px 0px",
+        threshold: 0.5,
+    }
+);
+
+observer.observe(target);
