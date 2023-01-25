@@ -14,7 +14,22 @@ prevButton.addEventListener("click", () => {
     slidesContainer.scrollLeft -= slideWidth;
 });
 
-nextButton.addEventListener("click", (event) => {
+nextButton.addEventListener("click", () => {
     const slideWidth = slide.clientWidth;
     slidesContainer.scrollLeft += slideWidth;
+});
+
+const slidesContainer2 = document.getElementById("slider_cinema2");
+const slide2 = document.querySelector(".slide");
+const prevButton2 = document.getElementById("slider_cinema2_arrow_left");
+const nextButton2 = document.getElementById("slider_cinema2_arrow_right");
+
+prevButton2.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer2.scrollLeft -= slideWidth;
+});
+
+nextButton2.addEventListener("click", () => {
+    const slideWidth = slide.clientWidth;
+    slidesContainer2.scrollLeft += slideWidth;
 });
