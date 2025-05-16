@@ -1,4 +1,9 @@
-# Intégration du site allocine
-https://admirable-cupcake-4fec29.netlify.app/
+# 🎬 Reproduction de la landing page AlloCiné
 
-Projet de 1ère année. Je devais intégrer la maquette donnée représentant la page principale du site Allociné. Le but était d'approfondir les compétences HTML/CSS en intégrant la page d'accueil d'un site concret.
+Ce projet a été réalisé dans le cadre d’un exercice de 1ère année de développement web. L’objectif était de **reproduire à l’identique la landing page du site AlloCiné**, en utilisant uniquement **HTML**, **CSS** et un peu de **JavaScript** pour le comportement du menu burger (responsive).
+
+## 🧱 Technologies utilisées
+
+- 🌐 **HTML5** : structure de la page
+- 🎨 **CSS3** : mise en forme, responsive design, animations
+- 🧠 **JavaScript vanilla** : ouverture/fermeture du menu burger sur petits écrans
